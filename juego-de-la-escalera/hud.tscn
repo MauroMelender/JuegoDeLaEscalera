@@ -1,0 +1,28 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://b62owyu0kysqy" path="res://hud.gd" id="1"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1")
+
+[node name="Estado" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 16.0
+offset_right = 1000.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 20
+text = "Preparando..."
+autowrap_mode = 2
+
+[node name="Tiempo" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -150.0
+offset_top = 90.0
+offset_right = 150.0
+offset_bottom = 146.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 40
+text = "0.0 s"
+horizontal_alignment = 1
